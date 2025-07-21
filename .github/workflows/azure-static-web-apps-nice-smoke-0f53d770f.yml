@@ -50,7 +50,7 @@ jobs:
           action: "upload"
           app_location: "./Client"          # Path to your app source
           api_location: ""                  # No API used in this config
-          output_location: "build"          # Folder with production-ready output
+          output_location: "dist"          # Folder with production-ready output
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
